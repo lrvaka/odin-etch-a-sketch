@@ -1,16 +1,31 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt-btn {
+  font-size: 16px;
+  padding: 10px;
 }
 
 .grid {
-  gap: 12px;
-  height: 100vh;
+  gap: 1px;
+  width: 100vw;
+  height: 80vh;
+  max-width: 1920px;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
 }
 
-.dummy-square {
+.square {
   background-color: black;
 }
